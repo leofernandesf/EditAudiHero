@@ -146,13 +146,40 @@
                                     <action selector="teste:" destination="306-3X-soq" eventType="touchUpInside" id="ohP-Zd-KCB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjP-1D-vaY">
+                                <rect key="frame" x="20" y="142" width="68" height="30"/>
+                                <state key="normal" title="descricao"/>
+                                <connections>
+                                    <action selector="descricao:" destination="306-3X-soq" eventType="touchUpInside" id="PPI-LE-71s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHH-6v-Vcw">
+                                <rect key="frame" x="24" y="186" width="61" height="30"/>
+                                <state key="normal" title="narracao"/>
+                                <connections>
+                                    <action selector="narracao:" destination="306-3X-soq" eventType="touchUpInside" id="dHT-Lr-8bd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ny-yf-WSJ">
+                                <rect key="frame" x="24" y="224" width="30" height="30"/>
+                                <state key="normal" title="fala"/>
+                                <connections>
+                                    <action selector="fala:" destination="306-3X-soq" eventType="touchUpInside" id="5iP-Rw-Nu3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kuj-rf-SpL" firstAttribute="centerY" secondItem="cM0-Qi-amb" secondAttribute="centerY" constant="-99.5" id="4ya-KJ-N4k"/>
+                            <constraint firstItem="7ny-yf-WSJ" firstAttribute="top" secondItem="XHH-6v-Vcw" secondAttribute="bottom" constant="8" symbolic="YES" id="6Cj-TI-J1g"/>
                             <constraint firstItem="zFH-eS-THB" firstAttribute="centerY" secondItem="cM0-Qi-amb" secondAttribute="centerY" constant="35" id="71E-bS-Y90"/>
+                            <constraint firstItem="XHH-6v-Vcw" firstAttribute="leading" secondItem="7ny-yf-WSJ" secondAttribute="leading" id="AWy-Q7-oOn"/>
+                            <constraint firstItem="XHH-6v-Vcw" firstAttribute="top" secondItem="LjP-1D-vaY" secondAttribute="bottom" constant="14" id="AZv-GX-SUw"/>
                             <constraint firstItem="kuj-rf-SpL" firstAttribute="centerX" secondItem="cM0-Qi-amb" secondAttribute="centerX" id="Aub-pV-hca"/>
+                            <constraint firstItem="XHH-6v-Vcw" firstAttribute="centerY" secondItem="kuj-rf-SpL" secondAttribute="centerY" id="OL0-6d-Qgp"/>
                             <constraint firstItem="zFH-eS-THB" firstAttribute="centerX" secondItem="cM0-Qi-amb" secondAttribute="centerX" id="WS5-tf-pLE"/>
+                            <constraint firstItem="LjP-1D-vaY" firstAttribute="centerX" secondItem="XHH-6v-Vcw" secondAttribute="centerX" id="b7G-OJ-Mb0"/>
+                            <constraint firstItem="LjP-1D-vaY" firstAttribute="leading" secondItem="cM0-Qi-amb" secondAttribute="leadingMargin" id="srZ-Cd-BmG"/>
                         </constraints>
                     </view>
                     <connections>
