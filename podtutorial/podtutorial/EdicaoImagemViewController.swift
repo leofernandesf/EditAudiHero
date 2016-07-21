@@ -30,6 +30,39 @@ class EdicaoImagemViewController: UIViewController {
         print(CurrentPage.list())
     }
 
+    @IBAction func descricao(sender: AnyObject) {
+        print("1")
+        showMessage()
+    }
+    @IBAction func narracao(sender: AnyObject) {
+        print("2")
+        showMessage()
+    }
+    @IBAction func fala(sender: AnyObject) {
+        print("3")
+        showMessage()
+    }
+    
+    func showMessage() {
+        
+        let alert:UIAlertController = UIAlertController(title: "Audio", message: "escolha o audio", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        
+        let itunes = UIAlertAction(title: "ITunes", style: UIAlertActionStyle.Default) { UIAlertAction in
+            //self.openCamera()
+        }
+        let googleDrive = UIAlertAction(title: "Google Drive", style: UIAlertActionStyle.Default) { UIAlertAction in
+            //self.openGallery()
+        }
+        let cancelAction = UIAlertAction(title: "cancel", style: UIAlertActionStyle.Cancel) { UIAlertAction in
+            
+        }
+        
+        alert.addAction(itunes)
+        alert.addAction(googleDrive)
+        alert.addAction(cancelAction)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
