@@ -13,6 +13,7 @@
 		A70374001D1DD6C9001BFD30 /* podtutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A70373FE1D1DD6C9001BFD30 /* podtutorial.xcdatamodeld */; };
 		A70374021D1DD6C9001BFD30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70374011D1DD6C9001BFD30 /* Assets.xcassets */; };
 		A70374051D1DD6C9001BFD30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70374031D1DD6C9001BFD30 /* LaunchScreen.storyboard */; };
+		A72467851D4AF91900426526 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72467841D4AF91900426526 /* AudioViewController.swift */; };
 		A76F100E1D23FC1D002382C9 /* myCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F100D1D23FC1D002382C9 /* myCellCollectionViewCell.swift */; };
 		A76F10101D2401D1002382C9 /* EdicaoImagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F100F1D2401D1002382C9 /* EdicaoImagemViewController.swift */; };
 		A7E423F21D255B2500EC49D5 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E423F11D255B2500EC49D5 /* PageViewController.swift */; };
@@ -32,6 +33,7 @@
 		A70374011D1DD6C9001BFD30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A70374041D1DD6C9001BFD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A70374061D1DD6C9001BFD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72467841D4AF91900426526 /* AudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		A76F100D1D23FC1D002382C9 /* myCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		A76F100F1D2401D1002382C9 /* EdicaoImagemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdicaoImagemViewController.swift; sourceTree = "<group>"; };
 		A7E423F11D255B2500EC49D5 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				A76F100D1D23FC1D002382C9 /* myCellCollectionViewCell.swift */,
 				A76F100F1D2401D1002382C9 /* EdicaoImagemViewController.swift */,
 				A7E423F11D255B2500EC49D5 /* PageViewController.swift */,
+				A72467841D4AF91900426526 /* AudioViewController.swift */,
 			);
 			path = podtutorial;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				TargetAttributes = {
 					A70373F31D1DD6C9001BFD30 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 34PHTXR9K4;
 					};
 				};
 			};
@@ -233,6 +237,7 @@
 				A76F10101D2401D1002382C9 /* EdicaoImagemViewController.swift in Sources */,
 				A70374001D1DD6C9001BFD30 /* podtutorial.xcdatamodeld in Sources */,
 				A7E423FE1D25707000EC49D5 /* CurrentPage.swift in Sources */,
+				A72467851D4AF91900426526 /* AudioViewController.swift in Sources */,
 				A7E423F21D255B2500EC49D5 /* PageViewController.swift in Sources */,
 				A76F100E1D23FC1D002382C9 /* myCellCollectionViewCell.swift in Sources */,
 				A70373F81D1DD6C9001BFD30 /* AppDelegate.swift in Sources */,
@@ -350,10 +355,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = podtutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.podtutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -364,10 +371,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = podtutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.podtutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

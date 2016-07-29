@@ -48,7 +48,7 @@ class EdicaoImagemViewController: UIViewController {
         let alert:UIAlertController = UIAlertController(title: "Audio", message: "escolha o audio", preferredStyle: UIAlertControllerStyle.ActionSheet)
         
         let itunes = UIAlertAction(title: "ITunes", style: UIAlertActionStyle.Default) { UIAlertAction in
-            //self.openCamera()
+            self.openItunes()
         }
         let googleDrive = UIAlertAction(title: "Google Drive", style: UIAlertActionStyle.Default) { UIAlertAction in
             //self.openGallery()
@@ -61,6 +61,10 @@ class EdicaoImagemViewController: UIViewController {
         alert.addAction(googleDrive)
         alert.addAction(cancelAction)
         self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func openItunes() {
+        performSegueWithIdentifier("musica", sender: self)
     }
     
     /*

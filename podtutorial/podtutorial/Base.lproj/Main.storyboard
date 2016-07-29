@@ -184,11 +184,59 @@
                     </view>
                     <connections>
                         <outlet property="ivImage" destination="kuj-rf-SpL" id="mTd-bu-VxY"/>
+                        <segue destination="etb-Hg-yF1" kind="show" identifier="musica" id="QYf-ID-usq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTC-Tq-P98" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2048" y="2028"/>
+        </scene>
+        <!--Audio View Controller-->
+        <scene sceneID="MoM-iV-lhK">
+            <objects>
+                <viewController id="etb-Hg-yF1" customClass="AudioViewController" customModule="podtutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pP0-zu-Ekb"/>
+                        <viewControllerLayoutGuide type="bottom" id="C45-KZ-czC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SmA-i8-JtU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2BF-Re-Qct">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Oqe-0z-1bf">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oqe-0z-1bf" id="GqY-4s-0CX">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="etb-Hg-yF1" id="MIb-ch-3vi"/>
+                                    <outlet property="delegate" destination="etb-Hg-yF1" id="t0H-N4-hQl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2BF-Re-Qct" secondAttribute="trailing" id="3HM-pw-XOP"/>
+                            <constraint firstItem="C45-KZ-czC" firstAttribute="top" secondItem="2BF-Re-Qct" secondAttribute="bottom" id="8Ig-3t-Ylb"/>
+                            <constraint firstItem="2BF-Re-Qct" firstAttribute="top" secondItem="SmA-i8-JtU" secondAttribute="top" id="MO7-Wt-7QY"/>
+                            <constraint firstItem="2BF-Re-Qct" firstAttribute="leading" secondItem="SmA-i8-JtU" secondAttribute="leading" id="vIo-Zy-EMg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTable" destination="2BF-Re-Qct" id="gxb-ZP-plS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIN-Tq-BGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730" y="2028"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rhl-p7-Dh1">
